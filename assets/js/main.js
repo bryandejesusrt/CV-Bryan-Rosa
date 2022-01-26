@@ -46,6 +46,7 @@ function scrollTop(){
     // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
     if(this.scrollY >= 200) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
+window.addEventListener('scroll', scrollTop)
 
 /*==================== DARK LIGHT THEME ====================*/ 
 const themeButton = document.getElementById('theme-button')
@@ -91,20 +92,31 @@ function removeScreale(){
 // PDF generated area
 let resumeButtom = document.getElementById('resume-button'); 
 
+let areaCv = document.getElementById('area-cv');
 // Html2pdf options
 
 
 // Function to call areaCv and Html2Pdf options 
-
+resumeButtom.addEventListener('click', ()=>{
+    this.scaleCV();
+    this.generateResume();
+    setTimeout(removeScreale, 5000);
+})
 
 // When the button is clicked, it executes the three functions
-resumeButtom.addEventListener('click', () =>){
-    this.scaleCV();
+function generateResume(){
+    html2pdf(areaCv, opt);
 }
     // 1. The class .scale-cv is added to the body, where it reduces the size of the elements
 
 
     // 2. The PDF is generated
-
+let opt = {
+    margin:       0,
+    filename:     'Bryan.J Rosa CV.pdf',
+    image:        { type: 'jpeg', quality: 0.98 },
+    html2canvas:  { scale: 2 },
+    jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+};
 
     // 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size.

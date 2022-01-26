@@ -63,83 +63,10 @@ body.dark-theme{
   font-size: 1.2rem;
   cursor: pointer;
 }
+
 .change-theme:hover{
   color: var(--text-color-light);
 }
-/*========== Font size variables to scale cv ==========*/
-body.cv-scale{
-  --h1-font-size: .938rem;
-  --h2-font-size: .938rem;
-  --h3-font-size: .875rem;
-  --normal-font-size: .813rem;
-  --small-font-size: .75rem;
-  --smaller-font-size: .668rem;
-}
-.cv-scale .change-theme,
-.cv-scale .generate-pdf{
-  display: none;
-}
-.cv-scale .bd-container{
-  max-width: 595px;
-}
-.cv-scale .section{
-  padding: 1.5rem 0 .80rem;
-}
-.cv-scale .section-title{
-  margin-bottom: .75rem;
-}
-.cv-scale .resume_left,
-.cv-scale .resume_right{
-  padding: 1rem;
-}
-.cv-scale .home_image{
-  width: 90px;
-  height: 90px;
-}
-.cv-scale .home_container{
-  grid-gap: 1.5rem;
-}
-.cv-scale .home_data{
-  grid-gap: .25rem;
-}
-.cv-scale .home_address,
-.cv-scale .social_container{
-  grid-gap: .75rem;
-}
-.cv-scale .home_icon,
-.cv-scale .social_icon,
-.cv-scale .interest_icon{
-  font-size: 1rem;
-}
-.cv-scale .education_container,
-.cv-scale .experience_container
-.cv-scale .certificate_container{
-  padding-right: .5rem;
-}
-.cv-scale .education_router,
-.cv-scale .experience_router{
-  width: 11px;
-  height: 11px;
-  margin-top: .22rem;
-}
-.cv-scale .education_line,
-.cv-scale .experience_line{
-  width: 1px;
-  height: 110%;
-  transform: translate(5px, 0);
-}
-
-.cv-scale .education_data,
-.cv-scale .experience_data{
-  grid-gap: .25rem;
-}
-.cv-scale .skills_name{
-  margin-bottom: var(--mb-1);
-}
-.cv-scale .interests_container{
-  column-gap: 2.5rem;
-}
-
 
 /*========== Generate PDF button ==========*/
 .generate-pdf{
@@ -150,10 +77,10 @@ body.cv-scale{
   color: var(--text-color);
   cursor: pointer;
 }
+
 .generate-pdf:hover{
   color: var(--title-color);
 }
-
 
 /*========== Classes modified to reduce size and print on A4 sheet ==========*/
 body{
@@ -226,6 +153,21 @@ img{
   box-shadow: 0px -1px 4px rgba(0, 0, 0, .1);
   transition: .3s;
 }
+/*========== SCROLL BAR ==========*/
+body::-webkit-scrollbar {
+  width: 8px; 
+  height: 8px; 
+}
+
+body::-webkit-scrollbar-track {
+  background: #F3F3F4;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #b3b3b3; 
+  border-radius: 3px;
+}
+
 /*========== NAV ==========*/
 .nav{
   height: var(--header-height);
@@ -257,6 +199,7 @@ img{
 .nav_toggle{
   font-size: 1.2rem;
   cursor: pointer;
+  padding: 5px 15px;
 }
 
 .nav_item{
@@ -536,6 +479,7 @@ img{
   transition: .4s;
   visibility: hidden;
 }
+
 .scrolltop_icon{
   font-size: 1.5rem;
   color: var(--text-color);
@@ -589,6 +533,7 @@ img{
   .profile_description{
     text-align: initial;
   } 
+
   .home_container{
     grid-gap: 1.5rem;
   }
@@ -600,6 +545,7 @@ img{
   .generate-pdf{
     display: inline-block;
   }
+
   .references_container{
     display: grid;
     grid-template-columns: repeat(3, max-content);
@@ -611,6 +557,7 @@ img{
     grid-template-columns: repeat(3, max-content);
     grid-gap: 3.5rem;
   }
+  
   .interests_container{
     grid-gap: 2.5rem;
     
