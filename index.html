@@ -10,82 +10,378 @@
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Responsive resume cv</title>
+        <!--========== Icon ==========-->
+        <link rel="shortcut icon" href="assets/img/Cyclopesoft.png" type="image/x-icon">
+
+        <title>Bryan.J Rosa Tavarez. 🦉</title>
     </head>
-    <body>
+    <body class="cv-scale">
         <!--========== HEADER ==========-->
         <header class="l-header" id="header">
-            
+        <nav class="nav bd-container">
+            <a href="#" class="nav_logo">Bryan</a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#Home" class="nav_link active-link">
+                            <i class="bx bx-home  nav_icon"></i>Home
+                        </a>
+                    </li>
+                    
+                    <li class="nav_item">
+                        <a href="#Profile" class="nav_link">
+                            <i class="bx bx-user nav_icon"></i>Perfil
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#Education" class="nav_link">
+                            <i class="bx bx-book nav_icon"></i>Education
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#Skills" class="nav_link">
+                            <i class="bx bx-receipt nav_icon"></i>Skills
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#Experience" class="nav_link">
+                            <i class="bx bx-briefcase nav_icon"></i>Experience
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#Certificates" class="nav_link">
+                            <i class="bx bx-award nav_icon"></i>Certificate
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#References" class="nav_link">
+                            <i class="bx bx-link-external nav_icon"></i>References
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="nav_toggle" id="nav-toggle">
+                <i class="bx bx-grid-alt"></i>
+            </div>
+        </nav>
         </header>
 
         <main class="l-main bd-container">
             <!-- All elements within this div, is generated in PDF -->
             <div class="resume" id="area-cv">
-                <div class="resume__left">
-                    <!--========== HOME ==========-->
-                    <section class="home" id="home">
-                        
-                        <!-- Theme change button -->
-                        
-    
-                        <!-- Button to generate and download the pdf. Available for desktop. -->
+                <div class="resume_left">
 
+                    <!--========== HOME ==========-->
+                    <section class="home" id="Home">
+                        <div class="home_container section bd-grid">
+                            <div class="home_data bd-grid">
+                                <img src="assets/img/bryan.jpg" alt="photo perfil" class="home_image">
+
+                                    <h1 class="home_title">Bryan.J <b>Rosa Tavarez</b></h1>
+                                    <h3 class="home_profession">Sofware Developer</h3>
+
+                                    <!-- Button to generate and download the pdf. Available for desktop. -->         
+                                    <div>                                        
+                                        <a download="" href="assets/pdf/ResumeCv.pdf" class="home_buttom-movil">Download</a>                                        
+                                    </div>
+                            </div>
+                            <div class="home_address bd-grid">
+                                <span class="home_information">
+                                    <i class="bx bx-map home_icon"></i>Av. Nuñes de caseres #19 - Dominican Republic
+                                </span>
+                                <span class="home_information">
+                                    <i class="bx bx-envelope home_icon"></i>Bryan01248@gmail.com
+                                </span>
+                                <span class="home_information">
+                                    <i class="bx bx-phone home_icon"></i>829-889-5669
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Theme change button -->
+                        <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+                        <!--Buttom to generate and download the pdf-->
+                        <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
+                        
                     </section>          
                     
                     <!--========== SOCIAL ==========-->
                     <section class="social section">
-                        
+                        <h2 class="section-title">Social</h2>
+
+                        <div class="social_container bd-grid">
+                            <a href="https://www.linkedin.com/in/bryan-rt15/" target="_blank" class="social_link">
+                                <i class="bx bxl-linkedin-square social_icon"></i>bryan-rt15
+                            </a>
+                            <a href="https://www.instagram.com/bryan_rt15/" target="_blank" class="social_link">
+                                <i class="bx bxl-instagram social_icon"></i>bryan_rt15
+                            </a>
+                            <a href="https://www.facebook.com/bryan.rosatavarez" target="_blank" class="social_link">
+                                <i class="bx bxl-facebook social_icon"></i>bryan.rosatavarez
+                            </a>
+                            <a href="https://twitter.com/Bryan_rt15" target="_blank" class="social_link">
+                                <i class="bx bxl-twitter social_icon"></i>Bryan_rt15
+                            </a>
+                        </div>
                     </section>
 
                     <!--========== PROFILE ==========-->
-                    <section class="profile section" id="profile">
-                        
+                    <section class="profile section" id="Profile">
+                        <h2 class="section-title">Profile</h2>
+
+                        <p class="profile_description">I am a person, responsible with their work during working hours. Finish various technical and higher studies at large universities. I have several years of experience and achievements in the labor field.</p>
                     </section>
                     
                     <!--========== EDUCATION ==========-->
-                    <section class="education section" id="education">
-                        
+                    <section class="education section" id="Education">
+                        <h2 class="section-title">Education</h2>
+
+                        <div class="educaion_container bd-grid">
+                            <div class="education_content">
+                                <div class="education_time">
+                                    <span class="education_router">
+                                    </span><span class="education_line"></span>
+                                </div>
+
+                                <div class="education_data bd-grid">
+                                    <h3 class="education_title">MASTER OF DATA BASE</h3>
+                                    <span class="education_studies">University od studies</span>
+                                    <span class="education_year">2010 - 2013</span>
+                                </div>
+                            </div>
+
+                            <div class="education_content">
+                                <div class="education_time">
+                                    <span class="education_router"></span>
+                                    <span class="education_line"></span>
+                                </div>
+
+                                <div class="education_data bd-grid">
+                                    <h3 class="education_title">WEB DEVELOPER</h3>
+                                    <span class="education_studies">University od studies</span>
+                                    <span class="education_year">2015 - 2018</span>
+                                </div>
+                            </div>
+
+                            <div class="education_content">
+                                <div class="education_time">
+                                    <span class="education_router"></span>
+                                </div>
+
+                                <div class="education_data bd-grid">
+                                    <h3 class="education_title">FULL STACK</h3>
+                                    <span class="education_studies">University od studies</span>
+                                    <span class="education_year">2019 - 2021</span>
+                                </div>
+                            </div>
+                        </div>
                     </section>
 
 
                     <!--========== SKILLS  ==========-->
-                    <section class="skills section" id="skills">
-                        
+                    <section class="skills section" id="Skills">
+                        <h2 class="section-title" id="skills">Skills</h2>
+
+                        <div class="skills_content bd-grid">
+                            <ul class="skills_data">
+                                <li class="skills_name">
+                                    <i class="bx bxl-html5"></i>
+                                    <span class="skills_circle"></span>HTML
+                                </li>
+                                <li class="skills_name">
+                                    <i class="bx bxl-css3"></i>
+                                    <span class="skills_circle"></span>CSS
+                                </li>
+                                <li class="skills_name">
+                                    <i class="bx bxl-javascript"></i> 
+                                    <span class="skills_circle"></span>JS
+                                </li>
+                                <li class="skills_name">
+                                    <i class="bx bxl-react"></i>
+                                    <span class="skills_circle"></span>React.Js
+                                </li>
+                            </ul>
+
+                            <div class="skills_content bd-grid">
+                                <ul class="skills_data">
+                                    <li class="skills_name">
+                                        <i class="bx bx-data"></i>
+                                        <span class="skills_circle"></span>SQL
+                                    </li>
+                                    <li class="skills_name">
+                                        <i class="bx bx-code-alt"></i>
+                                        <span class="cshap"></span>C#
+                                    </li>
+                                    <li class="skills_name">
+                                        <i class="bx bxl-javascript"></i> 
+                                        <span class="skills_circle"></span>JS
+                                    </li>
+                                    <li class="skills_name">
+                                        <i class="bx bxl-react"></i>
+                                        <span class="skills_circle"></span>React.Js
+                                    </li>
+                                </ul>
+                        </div>
                     </section>
 
                 </div>
 
-                <div class="resume__right">
+                <div class="resume_right">
                     <!--========== EXPERIENCE ==========-->
-                    <section class="experience section" id="experience">
-                        
+                    <section class="experience section" id="Experience">
+                        <h2 class="section-title">Experience</h2>
+
+                        <div class="experience_cointainer bd-grid">
+                            <div class="experience_content">
+                                <div class="experience_time">
+                                    <span class="experience_router"></span>
+                                    <span class="experience_line"></span>
+                                </div>
+
+                                <div class="experience_data bd-grid">
+                                    <h3 class="experience_title">MASTER OF DESING</h3>
+                                    <span class="experience_company">From 2013 to 2015 | Tech Soft</span>
+                                    <p class="experience_description">Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</p>
+                                </div>                                
+                            </div>
+                            
+
+                            <div class="experience_content">
+                                <div class="experience_time">
+                                    <span class="experience_router"></span>
+                                    <span class="experience_line"></span>
+                                </div>
+
+                                <div class="experience_data bd-grid">
+                                    <h3 class="experience_title">UI /UX DESING AREA</h3>
+                                    <span class="experience_company">From 2013 to 2015 | Tech Soft</span>
+                                    <p class="experience_description">Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="experience_content">
+                                <div class="experience_time">
+                                    <span class="experience_router"></span>
+                                </div>
+
+                                <div class="experience_data bd-grid">
+                                    <h3 class="experience_title">MOVILE APPLICATION DEVELOPER</h3>
+                                    <span class="experience_company">From 2013 to 2015 | Tech Soft</span>
+                                    <p class="experience_description">Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</p>
+                                </div>
+                            </div>   
+                        </div>
                     </section>
 
                     <!--========== CERTIFICATES ==========-->
-                    <section class="certificate section" id="certificates">
-                        
+                    <section class="certificate section" id="Certificates">
+                        <h2 class="section-title">Certificate</h2>
+
+                        <div class="certificate_container bd-grid">
+                            <div class="certificate_content">
+                                <h3 class="certificate_title">Certified for compliance in the work area (2012)</h3>
+                                <p class="certificate_descrption">For meeting the expectations of leading the team to work the specified tasks in the labor field.</p>
+                            </div>
+
+                            <div class="certificate_content">
+                                <h3 class="certificate_title">Certificate of attendance on computer technology.</h3>
+                                <p class="certificate_descrption">For meeting the expectations of leading the team to work the specified tasks in the labor field.</p>
+                            </div>
+
+                            <div class="certificate_content">
+                                <h3 class="certificate_title">Achievement medal for productivity excellence during the year (2019)</h3>
+                                <p class="certificate_descrption">For meeting the expectations of leading the team to work the specified tasks in the labor field.</p>
+                            </div>
+                        </div>
                     </section>
 
                     <!--========== REFERENCES ==========-->
-                    <section class="references section" id="references">
+                    <section class="references section" id="References">
+                        <h2 class="section-title">References</h2>
+
+                        <div class="references_container bg-grid">
+                            <div class="references_content">
+                                <span class="references_subtitle">Sr. Director</span>
+                                <h3 class="references_title">Mr. Allam Rosa</h3>
+                                <ul class="references_contact">
+                                    <li>Phone: 829-345-4556</li>
+                                    <li>Email: Allam@gmail.com</li>
+                                </ul>
+                            </div>
+                            <div class="references_content">
+                            <span class="references_subtitle">Sr. Director</span>
+                            <h3 class="references_title">Mr. Allam Rosa</h3>
+                            <ul class="references_contact">
+                                <li>Phone: 829-345-4556</li>
+                                <li>Email: Allam@gmail.com</li>
+                            </ul>
+                            </div>
+                        </div>
                         
+                            
                     </section>
 
                     <!--========== LANGUAGES ==========-->
                     <section class="languages section">
-                        
+                        <h2 class="section-title">Languages</h2>
+                        <div class="languages_container">
+                            <ul class="languages_content">
+                                <li class="languages_name">
+                                    <span class="languages_circle"></span>Spanish 
+                                </li>
+                                <li class="languages_name">
+                                    <span class="languages_circle"></span>English
+                                </li>
+                            </ul>
+                        </div>
                     </section>
                     
                     <!--========== INTERESTS ==========-->
                     <section class="interests section">
-                        
+                        <h2 class="section-title">Interests</h2>
+
+                        <div class="interests_container bd-grid">
+                            <div class="interest_content">
+                                <i class="bx bx-headphone interest_icon"></i>
+                                <span class="interests_name">Music</span>
+                            </div>
+                            <div class="interest_content">
+                                <i class="bx bxs-plane-alt interest_icon"></i>
+                                <span class="interests_name">Travels</span>
+                            </div>
+                            <div class="interest_content">
+                                <i class="bx bx-book interest_icon"></i>
+                                <span class="interests_name">Read</span>
+                            </div>
+                            <div class="interest_content">
+                                <i class="bx bx-dumbbell interest_icon"></i>
+                                <span class="interests_name">Fitness</span>
+                            </div>
+                            <div class="interest_content">
+                                <i class="bx bx-camera interest_icon"></i>
+                                <span class="interests_name">Photos</span>
+                            </div>
+                            <div class="interest_content">
+                                <i class="bx bx-game interest_icon"></i>
+                                <span class="interests_name">Games</span>
+                            </div>
+                        </div>
                     </section>
                 </div>
             </div>        
         </main>
 
         <!--========== SCROLL TOP ==========-->
-        
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class="bx bx-up-arrow-alt scrolltop_icon"></i>
+        </a>
 
         <!--========== HTML2PDF ==========-->
         <script src="assets/js/html2pdf.bundle.min.js"></script>
