@@ -115,6 +115,7 @@ img{
   width: 100%;
   height: auto;
 }
+
 /*========== CLASS CSS ==========*/
 .section{
   padding: 1.5rem 0;
@@ -420,7 +421,10 @@ body::-webkit-scrollbar-thumb {
   margin-left: .75rem;
   margin-right: 1rem;
 }
-
+.languages img{
+  width: 20px;
+  height: auto;
+}
 /*========== CERTIFICATES ==========*/
 .certificate_title{
   font-size: var(--h3-font-size);
